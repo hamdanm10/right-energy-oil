@@ -1,3 +1,3 @@
 <x-layouts.guest title="Login">
-    Welcome
+    <div data-controller="guest-hello"></div>
 </x-layouts.guest>
