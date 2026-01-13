@@ -77,6 +77,24 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Authentication Redirects
+    |--------------------------------------------------------------------------
+    | Custom redirect paths for authentication events.
+    |
+    | login  : Redirect destination after a successful login
+    | logout : Redirect destination after a successful logout
+    |
+    | This is the recommended and official way to control
+    | authentication redirects in Laravel Fortify.
+    |
+    */
+    'redirects' => [
+        'login'  => '/admin/dashboard',
+        'logout' => '/login',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Fortify Routes Prefix / Subdomain
     |--------------------------------------------------------------------------
     |
@@ -155,5 +173,7 @@ return [
             // 'window' => 0,
         ]),
     ],
+
+
 
 ];
