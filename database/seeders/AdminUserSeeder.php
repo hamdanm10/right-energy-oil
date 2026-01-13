@@ -15,10 +15,10 @@ class AdminUserSeeder extends Seeder
     {
         User::updateOrCreate(
             [
-                'email' => 'superadmin@reo.com',
+                'email' => 'admin@reo.com',
             ],
             [
-                'name' => 'Super Administrator',
+                'name' => 'Administrator',
                 'password' => Hash::make('asdfasdf'),
                 'email_verified_at' => now(),
             ]
